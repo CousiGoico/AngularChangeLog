@@ -34,5 +34,7 @@ Se ejecuta el siguiente comando para generar el ChangeLog;
 ## Referencias
 
 [NPM - Standar-Version](https://www.npmjs.com/package/standard-version)
+
 [GitHub - Standar-Version](https://github.com/conventional-changelog/standard-version)
+
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
