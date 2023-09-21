@@ -1,27 +1,38 @@
 # AngularChangeLog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Este proyecto es una prueba de demostración de generación de ChangeLog automática.
 
-## Development server
+## Standard-Version
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Definición 
 
-## Code scaffolding
+Esta librería me permite a traves de un comando, generarel fichero ChangeLog.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Instalación
 
-## Build
+Hay que instalarlo con el siguiente comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+        npm i--save-dev standard-version
 
-## Running unit tests
+Posteriormente en el fichero **package.json** se crea un nuevo npm run en la sección scripts:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+        "scripts": {
+            "ng": "ng",
+            "start": "ng serve",
+            "build": "ng build",
+            "watch": "ng build --watch --configuration development",
+            "test": "ng test",
+            "release": "standard-version --first-release"
+        }
 
-## Running end-to-end tests
+### Ejecución
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Se ejecuta el siguiente comando para generar el ChangeLog;
 
-## Further help
+        npm run release
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Referencias
+
+[NPM - Standar-Version](https://www.npmjs.com/package/standard-version)
+[GitHub - Standar-Version](https://github.com/conventional-changelog/standard-version)
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
